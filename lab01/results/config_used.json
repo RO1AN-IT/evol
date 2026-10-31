@@ -1,0 +1,39 @@
+{
+  "student": {
+    "group": "Б24-527",
+    "index_in_group": 7,
+    "group_index_Q": 2,
+    "year_digits_Y": 26
+  },
+  "experiment": {
+    "n_runs": 20,
+    "base_seed": 20261028,
+    "evaluation_budget": 10000,
+    "configs": [
+      {
+        "name": "pm_0.10",
+        "display_name": "ГА, p_m = 0.10",
+        "population_size": 50,
+        "tournament_size": 3,
+        "crossover_probability": 0.9,
+        "sbx_eta": 15,
+        "sbx_gene_probability": 0.5,
+        "mutation_probability": 0.1,
+        "mutation_sigma": 0.8,
+        "elite_count": 2
+      },
+      {
+        "name": "pm_0.40",
+        "display_name": "ГА, p_m = 0.40",
+        "population_size": 50,
+        "tournament_size": 3,
+        "crossover_probability": 0.9,
+        "sbx_eta": 15,
+        "sbx_gene_probability": 0.5,
+        "mutation_probability": 0.4,
+        "mutation_sigma": 0.8,
+        "elite_count": 2
+      }
+    ]
+  }
+}

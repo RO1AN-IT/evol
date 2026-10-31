@@ -1,0 +1,60 @@
+{
+  "student": {
+    "group": "Б24-527",
+    "index_in_group": 7,
+    "group_index_Q": 2,
+    "year_digits_Y": 26
+  },
+  "problem": {
+    "calorie_min": 1600,
+    "calorie_max": 2300,
+    "budget": 2800,
+    "penalty_per_kcal": 8,
+    "penalty_per_repeat": 500,
+    "penalty_per_missing_category": 500,
+    "penalty_per_ruble_over": 2
+  },
+  "experiment": {
+    "n_runs": 20,
+    "base_seed": 20261028,
+    "evaluation_budget": 4000,
+    "configs": [
+      {
+        "name": "repair_reset",
+        "display_name": "Ремонт, замена блюда",
+        "constraint_mode": "repair",
+        "mutation": "reset",
+        "population_size": 40,
+        "tournament_size": 3,
+        "crossover_probability": 0.8,
+        "reset_probability": 0.25,
+        "swaps_per_meal": 1,
+        "elite_count": 2
+      },
+      {
+        "name": "penalty_reset",
+        "display_name": "Штраф, замена блюда",
+        "constraint_mode": "penalty",
+        "mutation": "reset",
+        "population_size": 40,
+        "tournament_size": 3,
+        "crossover_probability": 0.8,
+        "reset_probability": 0.25,
+        "swaps_per_meal": 1,
+        "elite_count": 2
+      },
+      {
+        "name": "repair_swap",
+        "display_name": "Ремонт, обмен дней",
+        "constraint_mode": "repair",
+        "mutation": "swap",
+        "population_size": 40,
+        "tournament_size": 3,
+        "crossover_probability": 0.8,
+        "reset_probability": 0.25,
+        "swaps_per_meal": 1,
+        "elite_count": 2
+      }
+    ]
+  }
+}
